@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="ddw_2_hw_datamining:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="ddw_2_hw_datamining.war">
+      <element id="artifact" artifact-name="ddw_2_hw_datamining:war exploded" />
+    </root>
+  </artifact>
+</component>

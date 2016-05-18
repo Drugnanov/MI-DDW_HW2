@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="03.DDW:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="ddw_2_hw_datamining.war">
+      <element id="artifact" artifact-name="03.DDW:war exploded" />
+    </root>
+  </artifact>
+</component>
