@@ -1,0 +1,610 @@
+<object-stream>
+  <associationrules id="4">
+    <com.rapidminer.operator.learner.associations.associationrule id="5">
+      <confidence>1.0</confidence>
+      <totalsupport>0.6435643564356436</totalsupport>
+      <lift>1.2023809523809523</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.6435643564356436</gain>
+      <ps>0.10832271345946476</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="6">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem id="7">
+          <frequency>65</frequency>
+          <name>aquatic = false</name>
+        </com.rapidminer.operator.learner.associations.booleanattributeitem>
+      </premise>
+      <conclusion class="list" id="8">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem id="9">
+          <frequency>84</frequency>
+          <name>fins = false</name>
+        </com.rapidminer.operator.learner.associations.booleanattributeitem>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="10">
+      <confidence>1.0</confidence>
+      <totalsupport>0.6039603960396039</totalsupport>
+      <lift>1.216867469879518</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.6039603960396039</gain>
+      <ps>0.10763650622487991</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="11">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem id="12">
+          <frequency>61</frequency>
+          <name>toothed = true</name>
+        </com.rapidminer.operator.learner.associations.booleanattributeitem>
+      </premise>
+      <conclusion class="list" id="13">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem id="14">
+          <frequency>83</frequency>
+          <name>backbone = true</name>
+        </com.rapidminer.operator.learner.associations.booleanattributeitem>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="15">
+      <confidence>1.0</confidence>
+      <totalsupport>0.6039603960396039</totalsupport>
+      <lift>1.2469135802469136</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.6039603960396039</gain>
+      <ps>0.1195961180276443</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="16">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="12"/>
+      </premise>
+      <conclusion class="list" id="17">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem id="18">
+          <frequency>81</frequency>
+          <name>feathers = false</name>
+        </com.rapidminer.operator.learner.associations.booleanattributeitem>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="19">
+      <confidence>1.0</confidence>
+      <totalsupport>0.6039603960396039</totalsupport>
+      <lift>1.2023809523809523</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.6039603960396039</gain>
+      <ps>0.10165670032349772</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="20">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem id="21">
+          <frequency>93</frequency>
+          <name>venomous = false</name>
+        </com.rapidminer.operator.learner.associations.booleanattributeitem>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="7"/>
+      </premise>
+      <conclusion class="list" id="22">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="9"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="23">
+      <confidence>1.0</confidence>
+      <totalsupport>0.7029702970297029</totalsupport>
+      <lift>1.216867469879518</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.7029702970297029</gain>
+      <ps>0.12528183511420454</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="24">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="21"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem id="25">
+          <frequency>75</frequency>
+          <name>tail = true</name>
+        </com.rapidminer.operator.learner.associations.booleanattributeitem>
+      </premise>
+      <conclusion class="list" id="26">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="27">
+      <confidence>1.0</confidence>
+      <totalsupport>0.5643564356435643</totalsupport>
+      <lift>1.216867469879518</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.5643564356435643</gain>
+      <ps>0.1005783746691501</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="28">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="21"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="12"/>
+      </premise>
+      <conclusion class="list" id="29">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="30">
+      <confidence>1.0</confidence>
+      <totalsupport>0.5643564356435643</totalsupport>
+      <lift>1.2469135802469136</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.5643564356435643</gain>
+      <ps>0.11175374963238893</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="31">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="21"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="12"/>
+      </premise>
+      <conclusion class="list" id="32">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="18"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="33">
+      <confidence>1.0</confidence>
+      <totalsupport>0.6336633663366337</totalsupport>
+      <lift>1.2023809523809523</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.6336633663366337</gain>
+      <ps>0.106656210175473</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="34">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem id="35">
+          <frequency>80</frequency>
+          <name>breathes = true</name>
+        </com.rapidminer.operator.learner.associations.booleanattributeitem>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="7"/>
+      </premise>
+      <conclusion class="list" id="36">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="9"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="37">
+      <confidence>1.0</confidence>
+      <totalsupport>0.6039603960396039</totalsupport>
+      <lift>1.6031746031746033</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.6039603960396039</gain>
+      <ps>0.22723262425252427</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="38">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="12"/>
+      </premise>
+      <conclusion class="list" id="39">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="18"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="40">
+      <confidence>1.0</confidence>
+      <totalsupport>0.6039603960396039</totalsupport>
+      <lift>1.2469135802469136</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.6039603960396039</gain>
+      <ps>0.1195961180276443</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="41">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="12"/>
+      </premise>
+      <conclusion class="list" id="42">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="18"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="43">
+      <confidence>1.0</confidence>
+      <totalsupport>0.6039603960396039</totalsupport>
+      <lift>1.216867469879518</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.6039603960396039</gain>
+      <ps>0.10763650622487991</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="44">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="18"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="12"/>
+      </premise>
+      <conclusion class="list" id="45">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="46">
+      <confidence>1.0</confidence>
+      <totalsupport>0.5841584158415841</totalsupport>
+      <lift>1.216867469879518</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.5841584158415841</gain>
+      <ps>0.10410744044701503</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="47">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem id="48">
+          <frequency>77</frequency>
+          <name>airborne = false</name>
+        </com.rapidminer.operator.learner.associations.booleanattributeitem>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="12"/>
+      </premise>
+      <conclusion class="list" id="49">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="50">
+      <confidence>1.0</confidence>
+      <totalsupport>0.5841584158415841</totalsupport>
+      <lift>1.2469135802469136</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.5841584158415841</gain>
+      <ps>0.11567493383001665</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="51">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="48"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="12"/>
+      </premise>
+      <conclusion class="list" id="52">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="18"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="53">
+      <confidence>1.0</confidence>
+      <totalsupport>0.5346534653465347</totalsupport>
+      <lift>1.6833333333333333</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.5346534653465347</gain>
+      <ps>0.2170375453386923</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="54">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem id="55">
+          <frequency>59</frequency>
+          <name>eggs = true</name>
+        </com.rapidminer.operator.learner.associations.booleanattributeitem>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem id="56">
+          <frequency>58</frequency>
+          <name>hair = false</name>
+        </com.rapidminer.operator.learner.associations.booleanattributeitem>
+      </premise>
+      <conclusion class="list" id="57">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem id="58">
+          <frequency>60</frequency>
+          <name>milk = false</name>
+        </com.rapidminer.operator.learner.associations.booleanattributeitem>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="59">
+      <confidence>1.0</confidence>
+      <totalsupport>0.6039603960396039</totalsupport>
+      <lift>1.216867469879518</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.6039603960396039</gain>
+      <ps>0.10763650622487991</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="60">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="21"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem id="61">
+          <frequency>88</frequency>
+          <name>domestic = false</name>
+        </com.rapidminer.operator.learner.associations.booleanattributeitem>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="25"/>
+      </premise>
+      <conclusion class="list" id="62">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="63">
+      <confidence>1.0</confidence>
+      <totalsupport>0.6237623762376238</totalsupport>
+      <lift>1.2625</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.6237623762376238</gain>
+      <ps>0.12969316733653563</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="64">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="21"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="9"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+      </premise>
+      <conclusion class="list" id="65">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="35"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="66">
+      <confidence>1.0</confidence>
+      <totalsupport>0.5544554455445545</totalsupport>
+      <lift>1.216867469879518</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.5544554455445545</gain>
+      <ps>0.09881384178021768</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="67">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="21"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="9"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="25"/>
+      </premise>
+      <conclusion class="list" id="68">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="69">
+      <confidence>1.0</confidence>
+      <totalsupport>0.5544554455445545</totalsupport>
+      <lift>1.2625</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.5544554455445545</gain>
+      <ps>0.11528281541025387</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="70">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="21"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="9"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="25"/>
+      </premise>
+      <conclusion class="list" id="71">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="35"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="72">
+      <confidence>1.0</confidence>
+      <totalsupport>0.594059405940594</totalsupport>
+      <lift>1.2023809523809523</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.594059405940594</gain>
+      <ps>0.09999019703950596</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="73">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="21"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="35"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="7"/>
+      </premise>
+      <conclusion class="list" id="74">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="9"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="75">
+      <confidence>1.0</confidence>
+      <totalsupport>0.5643564356435643</totalsupport>
+      <lift>1.6031746031746033</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.5643564356435643</gain>
+      <ps>0.21233212430153903</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="76">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="21"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="12"/>
+      </premise>
+      <conclusion class="list" id="77">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="18"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="78">
+      <confidence>1.0</confidence>
+      <totalsupport>0.5643564356435643</totalsupport>
+      <lift>1.2469135802469136</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.5643564356435643</gain>
+      <ps>0.11175374963238893</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="79">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="21"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="12"/>
+      </premise>
+      <conclusion class="list" id="80">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="18"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="81">
+      <confidence>1.0</confidence>
+      <totalsupport>0.5643564356435643</totalsupport>
+      <lift>1.216867469879518</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.5643564356435643</gain>
+      <ps>0.1005783746691501</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="82">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="21"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="18"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="12"/>
+      </premise>
+      <conclusion class="list" id="83">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="84">
+      <confidence>1.0</confidence>
+      <totalsupport>0.5841584158415841</totalsupport>
+      <lift>1.216867469879518</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.5841584158415841</gain>
+      <ps>0.10410744044701503</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="85">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="21"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="35"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="25"/>
+      </premise>
+      <conclusion class="list" id="86">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="87">
+      <confidence>1.0</confidence>
+      <totalsupport>0.5445544554455446</totalsupport>
+      <lift>1.216867469879518</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.5445544554455446</gain>
+      <ps>0.09704930889128521</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="88">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="21"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="48"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="12"/>
+      </premise>
+      <conclusion class="list" id="89">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="90">
+      <confidence>1.0</confidence>
+      <totalsupport>0.5445544554455446</totalsupport>
+      <lift>1.2469135802469136</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.5445544554455446</gain>
+      <ps>0.10783256543476127</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="91">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="21"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="48"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="12"/>
+      </premise>
+      <conclusion class="list" id="92">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="18"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="93">
+      <confidence>1.0</confidence>
+      <totalsupport>0.5841584158415841</totalsupport>
+      <lift>1.6031746031746033</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.5841584158415841</gain>
+      <ps>0.21978237427703168</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="94">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="48"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="12"/>
+      </premise>
+      <conclusion class="list" id="95">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="18"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="96">
+      <confidence>1.0</confidence>
+      <totalsupport>0.5841584158415841</totalsupport>
+      <lift>1.2469135802469136</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.5841584158415841</gain>
+      <ps>0.11567493383001665</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="97">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="48"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="12"/>
+      </premise>
+      <conclusion class="list" id="98">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="18"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="99">
+      <confidence>1.0</confidence>
+      <totalsupport>0.5841584158415841</totalsupport>
+      <lift>1.216867469879518</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.5841584158415841</gain>
+      <ps>0.10410744044701503</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="100">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="18"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="48"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="12"/>
+      </premise>
+      <conclusion class="list" id="101">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="102">
+      <confidence>1.0</confidence>
+      <totalsupport>0.5544554455445545</totalsupport>
+      <lift>1.463768115942029</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.5544554455445545</gain>
+      <ps>0.1756690520537202</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="103">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="21"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="9"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="25"/>
+      </premise>
+      <conclusion class="list" id="104">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="35"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="105">
+      <confidence>1.0</confidence>
+      <totalsupport>0.5544554455445545</totalsupport>
+      <lift>1.2625</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.5544554455445545</gain>
+      <ps>0.11528281541025387</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="106">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="21"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="9"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="25"/>
+      </premise>
+      <conclusion class="list" id="107">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="35"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="108">
+      <confidence>1.0</confidence>
+      <totalsupport>0.5544554455445545</totalsupport>
+      <lift>1.216867469879518</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.5544554455445545</gain>
+      <ps>0.09881384178021768</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="109">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="21"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="9"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="35"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="25"/>
+      </premise>
+      <conclusion class="list" id="110">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="111">
+      <confidence>1.0</confidence>
+      <totalsupport>0.5445544554455446</totalsupport>
+      <lift>1.6031746031746033</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.5445544554455446</gain>
+      <ps>0.2048818743260465</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="112">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="21"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="48"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="12"/>
+      </premise>
+      <conclusion class="list" id="113">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="18"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="114">
+      <confidence>1.0</confidence>
+      <totalsupport>0.5445544554455446</totalsupport>
+      <lift>1.2469135802469136</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.5445544554455446</gain>
+      <ps>0.10783256543476127</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="115">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="21"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="48"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="12"/>
+      </premise>
+      <conclusion class="list" id="116">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="18"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+    <com.rapidminer.operator.learner.associations.associationrule id="117">
+      <confidence>1.0</confidence>
+      <totalsupport>0.5445544554455446</totalsupport>
+      <lift>1.216867469879518</lift>
+      <laplace>1.0</laplace>
+      <gain>-0.5445544554455446</gain>
+      <ps>0.09704930889128521</ps>
+      <conviction>infinity</conviction>
+      <premise class="list" id="118">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="21"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="18"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="48"/>
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="12"/>
+      </premise>
+      <conclusion class="list" id="119">
+        <com.rapidminer.operator.learner.associations.booleanattributeitem reference="14"/>
+      </conclusion>
+    </com.rapidminer.operator.learner.associations.associationrule>
+  </associationrules>
+</object-stream>

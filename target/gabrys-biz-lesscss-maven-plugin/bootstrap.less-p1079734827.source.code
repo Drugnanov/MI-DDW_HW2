@@ -1,0 +1,62 @@
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+// Core variables and mixins
+@import (less) "variables.less-n723777168.source.code";
+@import (less) "mixins.less-n1938223051.source.code";
+
+// přenastavení standardních hodnot proměnných vlastními
+@import (less) "custom-variables.less-p1985108026.source.code";
+
+// Reset and dependencies
+@import (less) "normalize.less-n156060262.source.code";
+@import (less) "print.less-n2075949574.source.code";
+@import (less) "glyphicons.less-n180248487.source.code";
+
+// Core CSS
+@import (less) "scaffolding.less-n1833008165.source.code";
+@import (less) "type.less-n2089955827.source.code";
+@import (less) "code.less-p558622522.source.code";
+@import (less) "grid.less-n1328842367.source.code";
+@import (less) "tables.less-n1709682238.source.code";
+@import (less) "forms.less-n1394127432.source.code";
+@import (less) "buttons.less-p138669478.source.code";
+
+// Components
+@import (less) "component-animations.less-n343956440.source.code";
+@import (less) "dropdowns.less-p2084452165.source.code";
+@import (less) "button-groups.less-n2064777960.source.code";
+@import (less) "input-groups.less-n240460240.source.code";
+@import (less) "navs.less-n1577043113.source.code";
+@import (less) "navbar.less-n839170313.source.code";
+@import (less) "breadcrumbs.less-p2083419575.source.code";
+@import (less) "pagination.less-n552488531.source.code";
+@import (less) "pager.less-n59504988.source.code";
+@import (less) "labels.less-n1911152536.source.code";
+@import (less) "badges.less-p1126612439.source.code";
+@import (less) "jumbotron.less-n393536933.source.code";
+@import (less) "thumbnails.less-p1933867104.source.code";
+@import (less) "alerts.less-p1373158608.source.code";
+@import (less) "progress-bars.less-n1608083929.source.code";
+@import (less) "media.less-n274959581.source.code";
+@import (less) "list-group.less-p2089633399.source.code";
+@import (less) "panels.less-n723640456.source.code";
+@import (less) "responsive-embed.less-p640681863.source.code";
+@import (less) "wells.less-p1995321922.source.code";
+@import (less) "close.less-p18592143.source.code";
+
+// Components w/ JavaScript
+@import (less) "modals.less-p134425953.source.code";
+@import (less) "tooltip.less-n1483022748.source.code";
+@import (less) "popovers.less-p1755195225.source.code";
+@import (less) "carousel.less-p1752318887.source.code";
+
+// Utility classes
+@import (less) "utilities.less-n140586051.source.code";
+@import (less) "responsive-utilities.less-n122064522.source.code";
+
+// vlastní styly
+@import (less) "custom.less-p162276900.source.code";

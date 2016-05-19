@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Weblogic-Application-Version: 0.0.0.1
+Implementation-Title: ddw_2_hw_datamining
+Implementation-Version: 0.0.0.1
+Built-By: Drugnanov
+Specification-Vendor: ${pom.organization.name}
+Specification-Title: ddw_2_hw_datamining
+Created-By: IntelliJ IDEA
+Build-Jdk: 1.8.0_65
+Specification-Version: 0.0.0.1
+Implementation-Vendor: ${pom.organization.name}
+

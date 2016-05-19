@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+    "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+    "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+  <!-- Definice šablony běžné stránky -->
+  <definition name="tiles.layout.page" template="/WEB-INF/pages/common/templates/page.jsp">
+    <put-attribute name="header" value="/WEB-INF/pages/common/fragments/header.jsp"/>
+    <put-attribute name="content" value=""/>
+    <put-attribute name="footer" value="/WEB-INF/pages/common/fragments/footer.jsp"/>
+  </definition>
+
+  <!-- Welcome stránka  -->
+  <definition name="tiles.common.welcome" extends="tiles.layout.page">
+    <put-attribute name="title" value="common.welcome.title"/>
+    <put-attribute name="content" value="/WEB-INF/pages/welcome/welcome.jsp"/>
+  </definition>
+
+  <!-- Stránka s pravidly  -->
+  <definition name="tiles.associativeRules.list" extends="tiles.layout.page">
+    <put-attribute name="title" value="common.welcome.title"/>
+    <put-attribute name="content" value="/WEB-INF/pages/associativeRules/associativeRules.jsp"/>
+  </definition>
+
+</tiles-definitions>

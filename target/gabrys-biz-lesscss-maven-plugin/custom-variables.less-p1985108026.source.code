@@ -1,0 +1,43 @@
+// menší vyplnění standardních formulářových prvků
+@padding-base-vertical: 4px; // 6px
+@padding-base-horizontal: 6px; /* 12px */
+
+// menší vyplnění velkých formulářových prvků
+@padding-large-vertical: 6px; /* 10px */
+@padding-large-horizontal: 12px; /* 16px */
+
+// menší vyplnění malých formulářových prvků
+@padding-small-vertical: 3px; /* 5px */
+@padding-small-horizontal: 6px; /* 10px */
+
+// menší vyplnění extra-malých formulářových prvků
+@padding-xs-vertical: 1px; /* 1px */
+@padding-xs-horizontal: 4px; /* 5px */
+
+// velikosti řádků beze změny
+@line-height-large: 1.3333333; // extra decimals for Win 8.1 Chrome
+@line-height-small: 1.5;
+
+// menší odsazení formulářových položek
+@form-group-margin-bottom: 3px; /* 15px */
+@font-size-base: 12px; /* 14px */
+
+// menší vyplnění tabulek
+@table-cell-padding: 5px; /* 8px */
+
+// menší alerty
+@alert-padding: 8px; /* 15px */
+
+// zaoblení formulářových prvků
+@input-border-radius: 1px; /* 4px */
+
+// svetle odkazy v hlavicce
+@navbar-default-link-color: #e3e3e3; /* #777 */
+@navbar-default-color: @navbar-default-link-color; /* #777; */
+@navbar-default-link-hover-color: #fff; /* #333 */
+
+// styl breadcrumbs
+@breadcrumb-color: #b0b0b0; /* #ccc; */
+@breadcrumb-separator: "\276F"; /* "/" */
+@breadcrumb-active-color: #5E5E5E; /* @gray-light */
+@jumbotron-bg: #f3f3f3; /* @gray-lighter */

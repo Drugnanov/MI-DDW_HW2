@@ -9,10 +9,12 @@
 
   <properties>
     <version>0.0.0.1</version>
+    <project.module.version>01</project.module.version>
+    <project.timestamp>${maven.build.timestamp}</project.timestamp>
     <project.java.version>1.8</project.java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <spring.version>4.2.4.RELEASE</spring.version>
     <maven.jetty.port>9393</maven.jetty.port>
+    <spring.version>4.2.4.RELEASE</spring.version>
     <artefact.jquery.version>2.2.0</artefact.jquery.version>
     <artefact.bootstrap.version>3.3.6</artefact.bootstrap.version>
     <artefact.datatables.version>1.10.10</artefact.datatables.version>
@@ -22,11 +24,110 @@
     <artefact.jstl.version>1.2</artefact.jstl.version>
     <artefact.jsp-api.version>2.1</artefact.jsp-api.version>
     <artefact.servlet-api.version>3.0.1</artefact.servlet-api.version>
+    <artefact.javax.validation.version>1.1.0.Final</artefact.javax.validation.version>
+    <artefact.hibernate.validation.version>5.2.3.Final</artefact.hibernate.validation.version>
   </properties>
 
   <build>
-    <finalName>ddw_2_hw_datamining</finalName>
+    <finalName>${project.artifactId}-${project.version}</finalName>
+    <resources>
+      <!-- Pouze properties soubory, které jsou konvertovány pomocí native2ascii  -->
+      <resource>
+        <directory>src/main/java</directory>
+        <includes>
+          <include>**/*.properties</include>
+        </includes>
+        <filtering>true</filtering>
+        <targetPath>../processed-resources</targetPath>
+      </resource>
+      <resource>
+        <directory>src/main/resources</directory>
+        <excludes>
+          <exclude>**/.svn</exclude>
+          <exclude>**/.svn/**</exclude>
+          <exclude>**/_svn</exclude>
+          <exclude>_svn</exclude>
+          <exclude>**/_svn/**</exclude>
+        </excludes>
+      </resource>
+    </resources>
     <plugins>
+      <!-- JAXB -->
+      <!--<plugin>-->
+        <!--<groupId>org.codehaus.mojo</groupId>-->
+        <!--<artifactId>jaxb2-maven-plugin</artifactId>-->
+        <!--<version>1.6</version>-->
+        <!--<executions>-->
+          <!--<execution>-->
+            <!--<id>DDW-HW2</id>-->
+            <!--<goals>-->
+              <!--<goal>xjc</goal>-->
+            <!--</goals>-->
+            <!--<configuration>-->
+              <!--<outputDirectory>${project.build.directory}/generated-sources/jaxb</outputDirectory>-->
+              <!--<packageName>cz.slama.school.ddw.hw2.generated.associativeRules</packageName>-->
+              <!--<wsdl>false</wsdl>-->
+              <!--<xmlschema>true</xmlschema>-->
+              <!--<schemaDirectory>src/main/resources/xsd</schemaDirectory>-->
+              <!--<schemaFiles>associativeRules.xsd</schemaFiles>-->
+              <!--<extension>true</extension>-->
+              <!--<clearOutputDir>false</clearOutputDir>-->
+            <!--</configuration>-->
+          <!--</execution>-->
+        <!--</executions>-->
+      <!--</plugin>-->
+      <plugin>
+        <groupId>biz.gabrys.maven.plugins</groupId>
+        <artifactId>lesscss-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>compile-less</id>
+            <phase>process-sources</phase>
+            <goals>
+              <goal>compile</goal>
+            </goals>
+            <configuration>
+              <sourceDirectory>${project.basedir}/src/main/less</sourceDirectory>
+              <outputDirectory>${project.basedir}/src/main/webapp/static/common/css</outputDirectory>
+              <outputFileFormat>{fileName}.min.css</outputFileFormat>
+              <includes>
+                <include>bootstrap.less</include>
+              </includes>
+              <compress>true</compress>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>native2ascii-maven-plugin</artifactId>
+        <version>1.0-alpha-1</version>
+        <executions>
+          <execution>
+            <id>native2ascii-utf8-resources</id>
+            <phase>compile</phase>
+            <goals>
+              <goal>native2ascii</goal>
+            </goals>
+            <configuration>
+              <src>target/processed-resources</src>
+              <includes>**/*.properties</includes>
+              <encoding>${project.build.sourceEncoding}</encoding>
+              <dest>target/classes</dest>
+            </configuration>
+          </execution>
+        </executions>
+        <!-- For Java 7+ compilation: -->
+        <dependencies>
+          <dependency>
+            <groupId>com.sun</groupId>
+            <artifactId>tools</artifactId>
+            <version>1.5.0</version>
+            <scope>system</scope>
+            <systemPath>${java.home}/../lib/tools.jar</systemPath>
+          </dependency>
+        </dependencies>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -39,16 +140,41 @@
         </configuration>
       </plugin>
       <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>native2ascii-maven-plugin</artifactId>
-      </plugin>
-      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.6</version>
+        <configuration>
+          <archive>
+            <manifestEntries>
+              <Weblogic-Application-Version>${pom.version}</Weblogic-Application-Version>
+              <Specification-Title>${pom.name}</Specification-Title>
+              <Specification-Version>${pom.version}</Specification-Version>
+              <Specification-Vendor>${pom.organization.name}</Specification-Vendor>
+              <Implementation-Title>${pom.name}</Implementation-Title>
+              <Implementation-Version>${pom.version}</Implementation-Version>
+              <Implementation-Vendor>${pom.organization.name}</Implementation-Vendor>
+              <Obelisk-Version>${pom.version}</Obelisk-Version>
+            </manifestEntries>
+          </archive>
+        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
+        <version>2.6</version>
+        <configuration>
+          <archive>
+            <manifestEntries>
+              <Weblogic-Application-Version>${pom.version}</Weblogic-Application-Version>
+              <Specification-Title>${pom.name}</Specification-Title>
+              <Specification-Version>${pom.version}</Specification-Version>
+              <Specification-Vendor>${pom.organization.name}</Specification-Vendor>
+              <Implementation-Title>${pom.name}</Implementation-Title>
+              <Implementation-Version>${pom.version}</Implementation-Version>
+              <Implementation-Vendor>${pom.organization.name}</Implementation-Vendor>
+            </manifestEntries>
+          </archive>
+        </configuration>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -132,6 +258,13 @@
       <artifactId>spring-webmvc</artifactId>
       <version>${spring.version}</version>
     </dependency>
+    <!--XML loading-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-oxm</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <!--javax-->
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>servlet-api</artifactId>
@@ -153,6 +286,16 @@
       <groupId>javax.servlet</groupId>
       <artifactId>jstl</artifactId>
       <version>${artefact.jstl.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.validation</groupId>
+      <artifactId>validation-api</artifactId>
+      <version>${artefact.javax.validation.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-validator</artifactId>
+      <version>${artefact.hibernate.validation.version}</version>
     </dependency>
     <!--Tiles-->
     <dependency>
@@ -180,6 +323,12 @@
       <groupId>org.webjars</groupId>
       <artifactId>datatables</artifactId>
       <version>${artefact.datatables.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.sun</groupId>
+      <artifactId>rt</artifactId>
+      <version>1.5.0_21</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 </project>

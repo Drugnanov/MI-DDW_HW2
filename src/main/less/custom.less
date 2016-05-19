@@ -1,0 +1,132 @@
+/*
+ * DDW CSS
+ */
+
+html {
+  position: relative;
+  min-height: 100%;
+  // překrytí obsahu IE jezdcem
+  -ms-overflow-style: scrollbar;
+}
+
+body {
+  /* Margin bottom kvůli výšce zápatí */
+  margin-bottom: 60px;
+}
+
+/* Zápatí */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Výška zápatí */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.footer div {
+  margin-top: 20px;
+}
+
+/* Označení povinné položky */
+.control-label.required:after {
+  content: "*";
+  color: red;
+}
+
+/* Odsazení skupiny ikon */
+.btn-group .glyphicon:before {
+  margin-right: 3px;
+}
+
+/* DataTables */
+
+/* Zarovnání obsahu ve sloupcích */
+table.dataTable th.dt-width-min,
+table.dataTable td.dt-width-min {
+  width: 1px;
+}
+
+table.dataTable th.dt-head-width-min,
+table.dataTable td.dt-head-width-min {
+  width: 1px;
+}
+
+table.dataTable th.dt-body-width-min,
+table.dataTable td.dt-body-width-min {
+  width: 1px;
+}
+
+table.dataTable th.dt-nowrap,
+table.dataTable td.dt-nowrap {
+  white-space: nowrap;
+}
+
+table.dataTable thead th.dt-head-nowrap,
+table.dataTable thead td.dt-head-nowrap {
+  white-space: nowrap;
+}
+
+table.dataTable tbody th.dt-body-nowrap,
+table.dataTable tbody td.dt-body-nowrap {
+  white-space: nowrap;
+}
+
+table.dataTable th.dt-center,
+table.dataTable td.dt-center,
+table.dataTable td.dataTables_empty {
+  text-align: center;
+}
+
+table.dataTable thead th.dt-head-center,
+table.dataTable thead td.dt-head-center {
+  text-align: center;
+}
+
+table.dataTable tbody th.dt-body-center,
+table.dataTable tbody td.dt-body-center {
+  text-align: center;
+}
+
+table.dataTable th.dt-right,
+table.dataTable td.dt-right {
+  text-align: right;
+}
+
+table.dataTable thead th.dt-head-right,
+table.dataTable thead td.dt-head-right {
+  text-align: right;
+}
+
+table.dataTable tbody th.dt-body-right,
+table.dataTable tbody td.dt-body-right {
+  text-align: right;
+}
+
+// nezobrazovat podtržení linků tlačítek v záhlaví panelů
+div.panel-heading {
+  // misto mezi akcemi
+  a {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+
+}
+
+// v navigaci nezmenšovat font, jinak je ovládáno @font-size-base
+// + přebarvit, zvýraznit
+.navbar-nav * {
+  font-weight: bold;
+  font-size: 2 + @font-size-base;
+}
+
+// zmenšení bootstrapového odsazení - aplikuje se na všechny DOM potomky elementu s touto třídou
+.override-bootstrap-padding * {
+  [class*="col-"] {
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+  }
+}
