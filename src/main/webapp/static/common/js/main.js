@@ -2,6 +2,16 @@
  * Created by slama on 6.2.2016.
  */
 
+$(function () {
+  /**
+   * Reload DataTables tabulky.
+   */
+  $('.sef-dt-reload').on('click', function (event) {
+    reloadDataTable($(this).data('table-id'));
+    event.preventDefault();
+  });
+});
+
 /**
  * Defaultní nastavení DataTables.
  */
@@ -12,6 +22,8 @@ var dataTablesDefaults = {
   lengthMenu: [10, 25, 50, 75, 100], // definování seznamu počtu záznamů na stránku
   searching: false, // vyhledávání
   order: [], // žádné výchozí třídění
+  processing: true,
+  serverSide: true, // zpracování na straně serveru
   /* Definice vlastností sloupců */
   columnDefs: [
     {
@@ -21,3 +33,10 @@ var dataTablesDefaults = {
   ]
 };
 $.extend(true, $.fn.dataTable.defaults, dataTablesDefaults);
+
+/**
+ * Reload DataTables tabulky. Vytvoří nový request, který se odešle na server.
+ */
+function reloadDataTable(tableId) {
+  $('#' + tableId).DataTable().ajax.reload();
+}

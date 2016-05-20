@@ -34,7 +34,7 @@
             </a>
             <ul class="dropdown-menu">
               <li>
-                <a href="<spring:url value="#"/>">
+                <a href="<spring:url value="/assocRulesData/detail"/>">
                   <spring:message code="common.menu.dataMining.data"/>
                 </a>
               </li>

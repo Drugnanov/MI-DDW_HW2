@@ -20,8 +20,14 @@
 
   <!-- Stránka s pravidly  -->
   <definition name="tiles.associativeRules.list" extends="tiles.layout.page">
-    <put-attribute name="title" value="common.welcome.title"/>
-    <put-attribute name="content" value="/WEB-INF/pages/associativeRules/associativeRules.jsp"/>
+    <put-attribute name="title" value="associativeRules.title"/>
+    <put-attribute name="content" value="/WEB-INF/pages/associativeRules/associativeRulesList.jsp"/>
+  </definition>
+
+  <!-- Stránka s daty pravidel  -->
+  <definition name="tiles.assocRulesData.list" extends="tiles.layout.page">
+    <put-attribute name="title" value="associativeRulesData.title"/>
+    <put-attribute name="content" value="/WEB-INF/pages/assocRulesData/assocRulesDataDetail.jsp"/>
   </definition>
 
 </tiles-definitions>

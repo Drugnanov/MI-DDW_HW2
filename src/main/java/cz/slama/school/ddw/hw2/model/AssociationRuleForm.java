@@ -2,6 +2,7 @@ package cz.slama.school.ddw.hw2.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Created by Drugnanov on 19.5.2016.
@@ -10,7 +11,17 @@ public class AssociationRuleForm {
   protected Long associativeRuleId;
   protected float confidence;
   protected List<String> premises = new ArrayList<>();
-  protected List<String> conclusion = new ArrayList<>();
+  protected List<String> conclusions = new ArrayList<>();
+
+  public String getPremisesString(){
+    return premises.stream()
+        .collect(Collectors.joining("; ")); // "John, Anna, Paul"
+  }
+
+  public String getConclusionsString(){
+    return conclusions.stream()
+        .collect(Collectors.joining("; ")); // "John, Anna, Paul"
+  }
 
   public Long getAssociativeRuleId() {
     return associativeRuleId;
@@ -36,12 +47,12 @@ public class AssociationRuleForm {
     this.premises = premises;
   }
 
-  public List<String> getConclusion() {
-    return conclusion;
+  public List<String> getConclusions() {
+    return conclusions;
   }
 
-  public void setConclusion(List<String> conclusion) {
-    this.conclusion = conclusion;
+  public void setConclusions(List<String> conclusion) {
+    this.conclusions = conclusion;
   }
 
   public void addPremise(String premise){
@@ -49,7 +60,7 @@ public class AssociationRuleForm {
   }
 
   public void addConclusion(String conclusion){
-    this.conclusion.add(conclusion);
+    this.conclusions.add(conclusion);
   }
 
   @Override
@@ -58,7 +69,7 @@ public class AssociationRuleForm {
         "associativeRuleId=" + associativeRuleId +
         ", confidence=" + confidence +
         ", premises=" + premises +
-        ", conclusion=" + conclusion +
+        ", conclusion=" + conclusions +
         '}';
   }
 }
